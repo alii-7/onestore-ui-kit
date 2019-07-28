@@ -3,7 +3,7 @@ import { makeStyles, createStyles } from "@material-ui/styles";
 import Menu from "@material-ui/core/Menu";
 import Button from "@material-ui/core/Button";
 import ListItem from "@material-ui/core/ListItem";
-import CustomNotificationItemList from './CustomNotificationItemList'
+import NotificationItemList from './NotificationItemList'
 
 const useStyles = makeStyles(
   createStyles({
@@ -80,7 +80,7 @@ const CustomNotificationMenu = props => {
         <ListItem disabled className={classes.header}>
           {`Notifications - ${props.allnotifications.length}`}
         </ListItem>
-        {props.allnotifications.length ? (<CustomNotificationItemList allnotifications={props.allnotifications}/>) : (
+        {props.allnotifications.length ? (<NotificationItemList allnotifications={props.allnotifications}/>) : (
           <p> No notification </p>
         )}
       </Menu>

@@ -1,9 +1,9 @@
 import React from 'react'
-import CustomCheckBoxMenu from './CustomCheckBoxMenu'
+import CheckBoxMenu from './CheckBoxMenu'
 
 const CustomCheckBoxMenu = (props) => {
     return (
-        <CustomCheckBoxMenu />
+        <CheckBoxMenu {...props}/>
     )
 }
 

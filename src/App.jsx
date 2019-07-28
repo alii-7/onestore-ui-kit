@@ -9,11 +9,16 @@ import CustomDropDownField from "./components/CustomDropDownField";
 import MenuItem from "@material-ui/core/MenuItem";
 import CustomTextArea from "./components/CustomTextArea/TextArea";
 import CustomNotificationMenu from "./components/CustomMenus/CustomNotificationMenu";
+import CustomCheckBoxMenu from './components/CustomMenus/CustomCheckBoxMenu' 
+import CustomNavigationMenu from './components/CustomMenus/CustomNavigationMenu'
+import CustomAddreses from './components/CustomMenus/CustomAddressesMenu'
 
 const arr = ["one", "two"];
 const arr2 = ["only item"];
 
 const allNotifications = [{ primaryText: 'To Scott, Alex, Jennifer to Scott, Alex, Jennifer to Scott, Alex,Jennifer to Scott, Alex, Jennifer' , secondaryText: '09 jab 2017'},{ primaryText: 'To Scott, Alex, Jennifer to Scott, Alex, Jennifer to Scott, Alex,Jennifer to Scott, Alex, Jennifer' , secondaryText: '09 jab 2017'}]
+const allchecklist = [{text:'Default checkbox', disabled:false}, {text:'Selected checkbox', disabled:false}, {text:'Hover checkbox', disabled:false}, {text:'Disabled checkbox', disabled:true}]
+const allAddresses = [{title:'magasin mulhouse', address:'170 rue des romains 68200 mulhouse'},{title:'magasin mulhousee', address:'170 rue des romains 68200 mulhouse'}]
 
 function App() {
   return (
@@ -65,7 +70,15 @@ function App() {
 
       
        
-      <CustomNotificationMenu allnotifications={allNotifications}/>
+      {/* <CustomNotificationMenu allnotifications={allNotifications}/> */}
+    
+       
+       {/* <CustomChecskBoxMenu allchecklist={allchecklist}/> */}
+    
+       {/* <CustomNavigationMenu /> */}
+
+       <CustomAddreses addresses={allAddresses} />
+
     </div>
   );
 }
